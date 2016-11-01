@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( BrightestSpots )
+find_package( OpenCV REQUIRED )
+add_executable( BrightestSpots BrightestSpots.cpp )
+target_link_libraries( BrightestSpots ${OpenCV_LIBS} )
